@@ -203,7 +203,6 @@ nav {
 
 .caption {
     position: absolute;
-    
     transform: translate( -50%, -50% );
     text-align: center;
     color: #fafafa;
@@ -242,6 +241,22 @@ nav {
     padding-bottom: 0.25em;
 }
 
+.email-form__container {
+    background: #39445F;
+}
+
+.email-form__content form {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2em;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1em;
+    width: 4em;
+    margin: 0;
+    padding: 1em;
+    
+}
+
 /* Large Phones */
 
 @media (min-width: 420px) {
@@ -249,13 +264,7 @@ nav {
         padding: 1em;
         text-align: left;
     }
-    ul.data {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    ul.data li {
-        flex: 0 0 50%;
-    }
+   
 }
 
 @media (min-width: 550px) {
