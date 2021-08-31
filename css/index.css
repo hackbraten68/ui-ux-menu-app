@@ -111,6 +111,10 @@ h1 {
     border-radius: .3em;
 }
 
+.panel-dark {
+    background: #303A52;
+}
+
 h3 {
     color: #FC85AE;
     margin: 0;
@@ -120,7 +124,7 @@ h3 {
 ul.data li p {
     color: white;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1em;
     margin: .3em 0 1em;
 }
 
@@ -139,7 +143,7 @@ main {
 }
 
 
-/* Your Fixes Below */
+/* My Fixes Below */
 
 body {
     background: #303A52;
@@ -187,8 +191,56 @@ nav {
 .panel {
     padding: .5em 1em;
     margin-bottom: 2em;
+    position: relative;
+    display: inline-block;
 }
 
+.image {
+   width: 386px;
+   opacity: 40%;
+   display: block;
+}
+
+.caption {
+    position: absolute;
+    
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: #fafafa;
+    font-weight: bold;
+}
+
+
+.caption-business__pos {
+    top: 70%;
+    left: 51%;
+    transform: translate( -15%, -50% );
+    text-align: right;
+}
+
+.caption-people__pos {
+    top: 70%;
+    left: 50%;
+    bottom: 30%;
+    width: 80%;
+    transform: translate( -15%, -50% -25%  );
+    text-align: center;
+}
+
+.caption-art__pos {
+    top: 25%;
+    left: 50%;
+    width: 70%;
+    transform: translate( -15%, -60% -25%);
+    text-align: center;
+}
+
+.caption-business__pos h3,
+.caption-people__pos h3,
+.caption-art__pos h3 {
+    border-bottom: #A5B2D3 1px solid;
+    padding-bottom: 0.25em;
+}
 
 /* Large Phones */
 
@@ -221,6 +273,8 @@ nav {
     }
 }
 
+/* Tablet size setting */
+
 @media (min-width: 720px) {
     body {
         padding: 1.5em;
@@ -242,6 +296,8 @@ nav {
     }
     
 }
+
+/* Desktop size setting */
 
 @media (min-width: 850px) {
     body {
@@ -282,33 +338,4 @@ nav {
     svg {
         display: none;
     }
-}
-
-
- /*
-
-- White Space
-- Color 
-- Contrast 
-- Scale
-- Alignment
-- Typography
-- Visual Hierarchy
-
-*/
-
-
-
-/* Ignore this -- for displaying the viewport width */
-.width-container {
-    display: none;
-}
-.display-width {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #E6E6E6;
-    padding: .3em;
-    font-size: .85em;
 }
